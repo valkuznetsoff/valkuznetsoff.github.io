@@ -1,0 +1,101 @@
+.top-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Цвет фона меню */
+  z-index: 1000; /* Поверх остального контента */
+}
+
+/* Выстраиваем пункты меню в ряд через Flexbox */
+.menu-list {
+  display: flex;
+  justify-content: right; /* Выравнивание по центру */
+  list-style-type: none; /* Убираем маркеры */
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Отступы для пунктов меню */
+.menu-list li {
+  margin: 0 15px;
+}
+
+/* Оформление ссылок */
+.menu-list a {
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+/* Эффект при наведении курсора */
+.menu-list a:hover {
+  color: #ffcc00; 
+}
+
+body {
+  padding-top: 60px;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+/*    align-items: center;    /* Центрирует по вертикали */
+    height: 20vh;          /* Высота на весь экран (для примера) */
+}
+
+/* Стилизуем и центрируем саму форму */
+.my-form {
+    width: 100%;
+    max-width: 750px; /* Задаем максимальную ширину формы */
+    padding: 20px;
+/*    border: 1px solid #ccc; */
+    background-color: #f9f9f9;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+/*    align-items: center;     /* Центрування по вертикалі */
+}
+
+/* Сам рядок пошуку */
+.search-input {
+    width: 50%;              /* Ширина рядка, за потреби змініть на іншу (наприклад, 400px) */
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;     /* Заокруглення кутів */
+    outline: none;           /* Прибирає стандартну синю обводку браузера */
+}
+
+/* Ефект при фокусі */
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.fancy-submit {
+/*    background: blue; /*linear-gradient(135deg, #4285f4, #34a853);*/
+/*    color: white;*/
+    font-size: 13px;
+/*    font-weight: bold; */
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.fancy-submit:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
+.fancy-submit:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
